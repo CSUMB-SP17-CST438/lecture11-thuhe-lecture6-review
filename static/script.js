@@ -9789,7 +9789,7 @@ var Content = exports.Content = function (_React$Component) {
                     'Hello world!'
                 ),
                 React.createElement(_Heading.Heading2, { title: 'I\'m a second banana' }),
-                React.createElement(_Button.Button, null)
+                React.createElement(_Button.Button, { text: 'Hi from Content.js!' })
             );
         }
     }]);
@@ -22149,7 +22149,7 @@ var Button = exports.Button = function (_React$Component) {
             return React.createElement(
                 'button',
                 null,
-                'Hi!'
+                this.props.text
             );
         }
     }]);

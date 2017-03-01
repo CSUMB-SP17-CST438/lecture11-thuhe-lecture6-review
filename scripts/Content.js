@@ -9,7 +9,7 @@ export class Content extends React.Component {
             <div>
                 <h1>Hello world!</h1>
                 <Heading2 title="I'm a second banana" />
-                <Button />
+                <Button text="Hi from Content.js!" />
             </div>
         );
     }
