@@ -6,10 +6,15 @@ export class Button extends React.Component {
         this.state = {
             'num clicked': 3
         };
+
+        this.doStuffOnClick = this.doStuffOnClick.bind(this);
     }
 
     doStuffOnClick(event) {
-        console.log('I\'m working');
+        let random_number = 100 * Math.random();
+        this.setState({
+            'num clicked': random_number,
+        });
     }
 
     render() {

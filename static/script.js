@@ -22145,13 +22145,18 @@ var Button = exports.Button = function (_React$Component) {
         _this.state = {
             'num clicked': 3
         };
+
+        _this.doStuffOnClick = _this.doStuffOnClick.bind(_this);
         return _this;
     }
 
     _createClass(Button, [{
         key: 'doStuffOnClick',
         value: function doStuffOnClick(event) {
-            console.log('I\'m working');
+            var random_number = 100 * Math.random();
+            this.setState({
+                'num clicked': random_number
+            });
         }
     }, {
         key: 'render',
