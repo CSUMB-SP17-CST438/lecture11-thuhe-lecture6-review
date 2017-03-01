@@ -22143,7 +22143,7 @@ var Button = exports.Button = function (_React$Component) {
         var _this = _possibleConstructorReturn(this, (Button.__proto__ || Object.getPrototypeOf(Button)).call(this, props));
 
         _this.state = {
-            'num clicked': 0
+            'num clicked': 3
         };
         return _this;
     }
@@ -22154,7 +22154,10 @@ var Button = exports.Button = function (_React$Component) {
             return React.createElement(
                 'button',
                 null,
-                this.props.text
+                this.props.text,
+                ': Clicked ',
+                this.state['num clicked'],
+                ' times!'
             );
         }
     }]);

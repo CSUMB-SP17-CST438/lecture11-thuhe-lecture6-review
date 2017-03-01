@@ -4,13 +4,13 @@ export class Button extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            'num clicked': 0
+            'num clicked': 3
         };
     }
 
     render() {
         return (
-            <button>{this.props.text}</button>
+            <button>{this.props.text}: Clicked {this.state['num clicked']} times!</button>
         );
     }
 }
