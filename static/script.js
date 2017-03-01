@@ -9786,7 +9786,7 @@ var Content = exports.Content = function (_React$Component) {
                     null,
                     'Hello world!'
                 ),
-                React.createElement(_Heading.Heading2, null)
+                React.createElement(_Heading.Heading2, { title: 'I\'m a second banana' })
             );
         }
     }]);
@@ -22093,10 +22093,11 @@ var Heading2 = exports.Heading2 = function (_React$Component) {
     _createClass(Heading2, [{
         key: 'render',
         value: function render() {
+            // {this.props.title}
             return React.createElement(
                 'div',
                 null,
-                'I\'m a banana!'
+                this.props['title']
             );
         }
     }]);

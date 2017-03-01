@@ -2,9 +2,11 @@ import * as React from 'react';
 
 export class Heading2 extends React.Component {
     render() {
+                // {this.props.title}
         return (
+
             <div>
-                I'm a banana!
+                {this.props['title']}
             </div>
         );
     }
