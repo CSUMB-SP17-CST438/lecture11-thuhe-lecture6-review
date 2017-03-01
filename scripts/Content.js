@@ -1,11 +1,13 @@
 import * as React from 'react';
 
+import { Heading2 } from './Heading';
+
 export class Content extends React.Component {
     render() {
         return (
             <div>
                 <h1>Hello world!</h1>
-                <h2>Hello second heading!</h2>
+                <Heading2 />
             </div>
         );
     }
