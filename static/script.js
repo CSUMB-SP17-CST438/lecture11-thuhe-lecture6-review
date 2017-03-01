@@ -22149,11 +22149,16 @@ var Button = exports.Button = function (_React$Component) {
     }
 
     _createClass(Button, [{
+        key: 'doStuffOnClick',
+        value: function doStuffOnClick(event) {
+            console.log('I\'m working');
+        }
+    }, {
         key: 'render',
         value: function render() {
             return React.createElement(
                 'button',
-                null,
+                { onClick: this.doStuffOnClick },
                 this.props.text,
                 ': Clicked ',
                 this.state['num clicked'],

@@ -8,9 +8,13 @@ export class Button extends React.Component {
         };
     }
 
+    doStuffOnClick(event) {
+        console.log('I\'m working');
+    }
+
     render() {
         return (
-            <button>{this.props.text}: Clicked {this.state['num clicked']} times!</button>
+            <button onClick={this.doStuffOnClick}>{this.props.text}: Clicked {this.state['num clicked']} times!</button>
         );
     }
 }
