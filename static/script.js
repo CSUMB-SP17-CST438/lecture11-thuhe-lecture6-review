@@ -22147,9 +22147,9 @@ var Button = exports.Button = function (_React$Component) {
         key: 'render',
         value: function render() {
             return React.createElement(
-                'div',
+                'button',
                 null,
-                'Placeholder button'
+                'Hi!'
             );
         }
     }]);
